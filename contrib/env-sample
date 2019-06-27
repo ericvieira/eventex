@@ -1,0 +1,21 @@
+SECRET_KEY=THIS_IS_NOT_A_GOOD_SECRET
+DEBUG=True
+ALLOWED_HOSTS=127.0.0.1,.localhost,.herokuapp.com
+
+EMAIL_BACKEND=django.core.mail.backends.console.EmailBackend
+EMAIL_HOST=localhost
+EMAIL_PORT=25
+EMAIL_USE_TSL=False
+EMAIL_HOST_USER=
+EMAIL_HOST_PASSWORD=
+
+
+#EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend
+#EMAIL_HOST=smtp.sendgrid.net
+#EMAIL_PORT=587
+#EMAIL_USE_TSL=True
+#EMAIL_HOST_USER=app136412244@heroku.com
+#EMAIL_HOST_PASSWORD=lvcfikyt0468
+
+#SENDGRID_PASSWORD: lvcfikyt0468
+#SENDGRID_USERNAME: app136412244@heroku.com
