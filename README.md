@@ -3,7 +3,8 @@
 Sistema de Eventos encomendados pela Morena
 
 [![Build Status](https://travis-ci.org/ericvieira/eventex.svg?branch=master)](https://travis-ci.org/ericvieira/eventex)
-
+[![Maintainability](https://api.codeclimate.com/v1/badges/292686f6c577d896378d/maintainability)](https://codeclimate.com/github/ericvieira/eventex/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/292686f6c577d896378d/test_coverage)](https://codeclimate.com/github/ericvieira/eventex/test_coverage)
 
 ## Como desenvolver?
 
@@ -20,7 +21,7 @@ git clone git@github.com:ericvieira/wttd.git wttd
 cd wttd
 python -m venv .wttd
 source .wttd/bin/activate 
-pip install -r requirements.txt
+pip install -r requirements-dev.txt
 cp contrib/env-sample .env
 python manage.py test
 ```
