@@ -46,7 +46,6 @@ def detail(request, pk):
         subscription = Subscription.objects.get(pk=pk)
     except Subscription.DoesNotExist:
         raise Http404
-    
     return render(request, 'subscriptions/subscription_detail.html',
                   {'subscription': subscription})
 
