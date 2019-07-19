@@ -25,11 +25,11 @@ def create(request):
 
     subscription = Subscription.objects.create(**form.cleaned_data)
 
-    _send_mail('Confirmação de inscrição',
-               settings.DEFAULT_FROM_EMAIL,
-               subscription.email,
-               'subscriptions/subscription_email.txt',
-               {'subscription': subscription})
+    # _send_mail('Confirmação de inscrição',
+    #            settings.DEFAULT_FROM_EMAIL,
+    #            subscription.email,
+    #            'subscriptions/subscription_email.txt',
+    #            {'subscription': subscription})
 
     messages.success(request, 'Inscrição realizada com sucesso!')
 
